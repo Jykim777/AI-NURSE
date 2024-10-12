@@ -3,20 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Playback</title>
+    <title>Procedure Audio Playback</title>
 </head>
 <body>
-    <button onclick="playAudio()">Play Audio</button>
-    <audio id="myAudio">
+
+    <h3>1. Welcome</h3>
+    <button onclick="playAudio('audio1')">Play Welcome</button>
+    <audio id="audio1">
       <source src="Welcome.m4a" type="audio/mpeg">
-      Your browser does not support the audio element.
+    </audio>
+
+    <h3>2. Check details</h3>
+    <button onclick="playAudio('audio2')">Play Check Details</button>
+    <audio id="audio2">
+      <source src="Check_details.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>3. Which eye?</h3>
+    <button onclick="playAudio('audio3')">Play Eye Question</button>
+    <audio id="audio3">
+      <source src="Eye.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>4. Surgery type</h3>
+    <button onclick="playAudio('audio4')">Play Surgery Type</button>
+    <audio id="audio4">
+      <source src="Surgery.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>5. Consent form</h3>
+    <button onclick="playAudio('audio5')">Play Consent Form</button>
+    <audio id="audio5">
+      <source src="Consent.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>6. Allergies</h3>
+    <button onclick="playAudio('audio6')">Play Allergies</button>
+    <audio id="audio6">
+      <source src="Allergies.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>7. Allergy type</h3>
+    <button onclick="playAudio('audio7')">Play Allergy Type</button>
+    <audio id="audio7">
+      <source src="Allergy_type.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>8. Penicillin Allergy</h3>
+    <button onclick="playAudio('audio8')">Play Penicillin Allergy</button>
+    <audio id="audio8">
+      <source src="Penicillin.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>9. Povidone Allergy</h3>
+    <button onclick="playAudio('audio9')">Play Povidone Allergy</button>
+    <audio id="audio9">
+      <source src="Povidone.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>10. Shellfish Allergy</h3>
+    <button onclick="playAudio('audio10')">Play Shellfish Allergy</button>
+    <audio id="audio10">
+      <source src="Shellfish.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>11. Diabetes</h3>
+    <button onclick="playAudio('audio11')">Play Diabetes</button>
+    <audio id="audio11">
+      <source src="Diabetes.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>12. Diabetes Medication</h3>
+    <button onclick="playAudio('audio12')">Play Diabetes Medication</button>
+    <audio id="audio12">
+      <source src="Diabetes_medication.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>13. Hypertension</h3>
+    <button onclick="playAudio('audio13')">Play Hypertension</button>
+    <audio id="audio13">
+      <source src="HTN.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>14. Hypertension Medication</h3>
+    <button onclick="playAudio('audio14')">Play Hypertension Medication</button>
+    <audio id="audio14">
+      <source src="HTN_medication.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>15. Anticoagulant</h3>
+    <button onclick="playAudio('audio15')">Play Anticoagulant</button>
+    <audio id="audio15">
+      <source src="Anticoagulant.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>16. Anticoagulant Medication</h3>
+    <button onclick="playAudio('audio16')">Play Anticoagulant Medication</button>
+    <audio id="audio16">
+      <source src="Anticoagulant_medication.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>17. Pacemaker</h3>
+    <button onclick="playAudio('audio17')">Play Pacemaker</button>
+    <audio id="audio17">
+      <source src="Pacemaker.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>18. Thank you</h3>
+    <button onclick="playAudio('audio18')">Play Thank You</button>
+    <audio id="audio18">
+      <source src="Thank_you.m4a" type="audio/mpeg">
+    </audio>
+
+    <h3>19. Final Check</h3>
+    <button onclick="playAudio('audio19')">Play Final Check</button>
+    <audio id="audio19">
+      <source src="Final.m4a" type="audio/mpeg">
     </audio>
 
     <script>
-    function playAudio() {
-        var audio = document.getElementById("myAudio");
+    function playAudio(id) {
+        var audio = document.getElementById(id);
         audio.play();
     }
     </script>
+
 </body>
 </html>
